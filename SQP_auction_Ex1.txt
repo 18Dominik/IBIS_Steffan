@@ -1,0 +1,37 @@
+SQL
+
+//Set up Data//
+
+
+//Table Users:
+insert into users values ("realDonaldTrump", "stableGenius123", "Donald", "Trump", 71,0);
+insert into users values ("angie", "ProGroKo", "Angela", "Merkel", 63,0);
+insert into users values ("kgbAgent", "russia4ever", "Vladimir", "Putin", 65,0);
+
+// Table Products
+insert into products values (1, "Diet Coke", 11);
+insert into products values (2, "Triangle of Power", 1);
+
+// Table Bids
+insert into bids values (1,1,"realDonaldTrump",10,30);
+insert into bids values (2,1,"angie",3,2.5);
+insert into bids values (3,2,"angie",1,50);
+
+//Update Data//
+update users set firstName = "Donni" Where username ="realDonaldTrump";
+update bids set Price = "100" Where BidID = 2;
+
+//Delete Row//
+delete from users where password="russia4ever";
+delete from users where age > 30 and age <=65;
+
+
+
+
+
+
+
+
+
+
+
